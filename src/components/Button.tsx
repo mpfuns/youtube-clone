@@ -6,7 +6,8 @@ import { twMerge } from "tailwind-merge"
      variants: {
         variant:{
             default:["bg-secondary", "hover:bg-secondary-hover"],
-            ghost:["hover:bg-gray-100"]
+            ghost:["hover:bg-gray-100"],
+            dark:["bg-secondary-dark", "hover:bg-secondary-dark-hover, text-secondary"],
         },
         size:{
             delfault:[" rounded", "p-2"],
