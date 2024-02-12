@@ -10,15 +10,15 @@ type  CategoryPillsProps ={
  const TRANSLATE_AMOUNT = 200
 export default function CategoryPills({categories,selectedCategory, onSelect}: CategoryPillsProps) {
   const [ translate, setTranslate] = useState(0);
-   const [isLeftVisible, setIsLeftVisible] = useState(true);
-   const [isRightVisible, setIsRightVisible] = useState(false);
+   const [isLeftVisible, setIsLeftVisible] = useState( false);
+   const [isRightVisible, setIsRightVisible] = useState(true);
    const containerRef = useRef<HTMLDivElement>(null);
 
   return (
     <div ref={containerRef} className="overflow-x-hidden  relative">
         <div 
         className="flex whitespace-nowrap gap-3 transition-transform w-[max-content]" 
-        style={{ transform: `translareX(-${ translate}px)`}}>
+        style={{ transform: `translateX(-${translate}px)`}}>
           {categories.map(category => (
             <Button key={category} onClick={()=> onSelect(category)} variant={selectedCategory === category? "dark" : "default"} className="py-1 px-3 rounded-lg whitespace-nowrap">
             {category}
