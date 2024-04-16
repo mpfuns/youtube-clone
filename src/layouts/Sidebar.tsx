@@ -1,5 +1,5 @@
 import { ChevronDown, ChevronUp, Clapperboard, Clock, Film, Flame, Gamepad2, History, Home, Library, Lightbulb, ListVideo, Music2, Newspaper, PlaySquare, Podcast, Radio, Repeat, Shirt, ShoppingBag, Trophy } from 'lucide-react'
-import React, { Children, ElementType, ReactNode, useState } from 'react'
+import  { Children, ElementType, ReactNode, useState } from 'react'
 import Button, { buttonStyles } from '../components/Button';
 import { twMerge } from 'tailwind-merge';
 import { playlists, subscriptions } from '../data/sidebar';

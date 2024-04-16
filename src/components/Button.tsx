@@ -27,7 +27,7 @@ import { twMerge } from "tailwind-merge"
       }
  })
 
-  const classes= buttonStyles({size: "icon"})
+
 
   type ButtonProps = VariantProps<typeof buttonStyles> & ComponentProps<"button">
 export default function Button({variant, size, className, ...props}: ButtonProps) {
